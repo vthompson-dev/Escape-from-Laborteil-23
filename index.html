@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="app.css">
+</head>
+<div class="app">
+    <header>
+        <h1>Escape from Laborteil 23</h1>
+        <div class="status" id="status"></div>
+    </header>
+
+    <main>
+        <div class="log" id="log" aria-live="polite"></div>
+
+        <div class="controls">
+            <input id="cmd" type="text" placeholder='Type a command (try: "look" or "help" to start.)'
+                autocomplete="off" />
+            <button id="go">Enter</button>
+            <button id="restart">Restart</button>
+        </div>
+
+        <div class="hint">
+            Commands: <code>look</code>, <code>inventory</code>, <code>go left</code>, <code>go right</code>,
+            <code>go forward</code>, <code>turn back</code>, <code>open door</code>,
+            <code>go door</code>.
+            <br />Also supports <code>help</code>, <code>clear</code>.
+        </div>
+        <script src="index.js"></script>
+    </main>
+</div>

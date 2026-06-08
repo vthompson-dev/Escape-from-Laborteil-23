@@ -1,0 +1,142 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #0b0f14;
+    color: #e7eef7;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    width: min(900px, 92vw);
+    background: #0f1722;
+    border: 1px solid #1f2b3b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+header {
+    padding: 14px 16px;
+    border-bottom: 1px solid #1f2b3b;
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
+}
+
+header h1 {
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+
+header .status {
+    font-size: 12px;
+    opacity: 0.9;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+main {
+    padding: 16px;
+}
+
+.log {
+    height: min(60vh, 520px);
+    overflow: auto;
+    padding: 14px;
+    border: 1px solid #1f2b3b;
+    border-radius: 10px;
+    background: #0b1220;
+}
+
+.line {
+    margin: 0 0 10px 0;
+}
+
+.line.system {
+    color: #b8c7dc;
+}
+
+.line.letter {
+    color: #cab6fa;
+    font-style: italic;
+}
+
+.line.player {
+    color: #8fe0a1;
+}
+
+.line.event {
+    color: #ffd38a;
+}
+
+.line.bad {
+    color: #ff8f8f;
+}
+
+.line.good {
+    color: #ffc30b;
+}
+
+.controls {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #1f2b3b;
+    background: #0b1220;
+    color: #e7eef7;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #3a5a86;
+}
+
+button {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #1f2b3b;
+    background: #142238;
+    color: #e7eef7;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.08);
+}
+
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.hint {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
+code {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
